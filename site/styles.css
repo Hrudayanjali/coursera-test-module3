@@ -1,0 +1,157 @@
+
+body {
+	font-size: 16px;
+	background-color: white;
+	color:black;
+}
+#header-nav {
+	background-color: #e63946;
+	border-radius: 0;
+	border: 0;
+}
+.navbar-brand  {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.navbar-brand h1 { 
+	color:white;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 2px 1px 1px black;
+	margin : 20px;
+	margin-left: 0;
+	margin-bottom: 10px;
+	line-height: .75;
+}
+#nav-list {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#nav-list a {
+	color:white;
+	text-align: center;
+	margin-right: 30px;
+}
+#nav-list a:hover{
+	background-color: gray;
+}
+
+.navbar-header button ,.navbar-toggle, .navbar-header .icon-bar {
+	border:1px solid white;
+	background: gray;
+}
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -40px;
+}
+/***end of header***/
+/***main body**/
+#main-heading{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#topics{
+	margin-bottom: 10px;
+}
+#chicken, #beef, #sushi {
+	color:white;
+	
+	position: relative;	
+	
+
+}
+#chicken h3, #beef h3, #sushi h3{
+	text-align: center;
+	background-color: gray;
+	font-weight: bold; 
+	margin: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+#chicken p, #beef p, #sushi p{
+	text-align:center;
+	background-color: gray;
+	padding:10px;
+	margin-top: 0px;
+}
+#chicken a, #beef a, #sushi a{
+	color:white;
+}
+
+/* lg*/
+@media (min-width: 1200px){
+
+}	
+	
+/**md**/
+@media(min-width: 992px;) and (max-width: 1199px){
+	/**header**/
+	#header-nav{
+		margin-bottom:40px;
+	}
+	.navbar-brand h1{
+		font-size:5vw;
+		padding-bottom: 10px;
+	}
+	#nav-list a{
+		margin-right: 10px;
+	}/**end of header**/
+	#main-content.container{
+	
+	}
+	#chicken, #beef, .container #sushi{
+	   
+	}
+}
+/**sd**/
+@media (min-width: 768px) and (max-width: 991px){
+	/**header**/
+	.navbar-brand h1{
+		font-size: 2em;
+		padding-bottom: 10px;
+	}
+	#nav-list a{
+		margin-right: 5px;
+	}
+	#nav-list a span{
+	font-size: 1em;
+    }/**end of header**/
+    #chicken , #beef {
+    	margin-bottom: 20px;
+    }
+    
+
+/**xs**/
+@media(max-width: 767px){
+	/**header**/
+	.navbar-brand{
+		padding-top: 10px;
+		height:80px;
+	}
+	.navbar-brand h1{
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+	#collaspable-nav a{
+		font-size: 1.2em;
+	}
+	#nav-list a span{
+		font-size: 1em;
+		margin-right: 5px;
+
+	}/**end of header**/
+	.row #chicken ,.row #beef ,.row #sushi{
+		margin:20px;
+		padding:0px;
+	}
+	/**.container .main-image{
+		padding: 0px;
+		margin-top: 10px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+	}**/		
+}
